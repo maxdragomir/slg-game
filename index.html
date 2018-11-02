@@ -1,23 +1,169 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SLG GAME</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SLG GAME</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 </head>
 <body>
 
-    <div class="container">
-        
-    </div>
+<div class="loader">
+	<img src="img/logo.png" alt="">
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+<div class="modal">
+	<div class="modal-body">
+		<h1 class="win-text">Поздравляю! <br> Ты Выиграл :)</h1>
+		<h1 class="lose-text">Ты Проиграл! <br> Попробуй еще :(</h1>
+		<button class="btn btn-modal active" type="button">Играть Еще</button>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="content">
+		<div class="torch">
+			<div class="fire">
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+			</div>
+			<img src="img/torch-f.png" alt="">
+		</div>
+
+		<div class="game">
+
+			<div class="game-content">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="chests">
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+					<div class="chest-bg"><span class="chest"></span></div>
+				</div>
+				<div class="text-info">
+					Для игры Вам необходимо купить попытки, <br> а затем нажать кнопку “ИГРАТЬ”
+				</div>
+			</div>
+
+			<div class="game-dwarf">
+				<img src="img/dwarf.png" alt="">
+				<div class="dwarf-animating">
+					<div class="beard"></div>
+					<div class="face"></div>
+					<div class="armor"></div>
+					<div class="armor2"></div>
+				</div>
+				<div class="tooltip">
+					<span class="text animate">Покупай игры и ищи несметные богатства.</span>
+				</div>
+				<button class="btn btn-play" disabled>Играть</button>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="sidebar">
+
+		<div class="sidebar-info">
+			<div class="text">1 игра = 5 $</div>
+
+			<div class="available">
+				<div class="title">Вам доступно</div>
+				<div class="block">
+					<span class="name">Игр:</span>
+					<div class="available-count count"><span>0</span></div>
+				</div>
+			</div>
+
+			<div class="purchase">
+				<div class="title">Покупка:</div>
+				<div class="block">
+					<span class="name">Игр:</span>
+					<div class="purchase-count">
+						<span class="count">0</span>
+						<div class="arrows">
+							<button class="btn-arrow btn-arrow-up"></button>
+							<button class="btn-arrow btn-arrow-down"></button>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<span class="name">Сумма:</span>
+					<div class="summ-count">
+						<span class="count">0</span>
+						<span>$</span>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn btn-buy" disabled>Купить</button>
+		</div>
+	</div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
-</html>
+</html> 
